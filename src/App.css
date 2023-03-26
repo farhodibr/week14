@@ -1,6 +1,26 @@
-
+body {
+  background-color: bisque;
+}
 .container {
   background-color: skyblue;
+  border: 5px;
+}
+
+.col-sm {
+  background-color: bisque;
+}
+
+.paragraph {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-fluid {
+  background-color: skyblue;
+  border: 5px;
+}
+
+.row {
+  border: 5px;
 }
 .horizontal-align {
   display: flex;

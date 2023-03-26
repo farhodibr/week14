@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import "./App.css";
+import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Reviews from "./Reviews";
 import Review from "./Review1";
 
+
 export default class App extends Component {
   render() {
     return (
-      <div >
-        <div class="container">
+      <div className="container-fluid" >
+        <div class="container-fluid">
           <div class="row">
             <div class="col-sm">
               <img

@@ -9,12 +9,12 @@ export default class Review extends React.Component {
 
     this.state = {
       review: "",
-      reviews: [],
-      savedReviews: [],
-      savedRatings: [],
+      //reviews: [],
+      //savedReviews: [],
+      //savedRatings: [],
       rating: 0,
 
-      postedRating: 0,
+      //postedRating: 0,
     };
 
     console.log(this.state);
@@ -32,12 +32,11 @@ export default class Review extends React.Component {
 
   handleSubmit(event) {
     //this.setState(  review: event.target  review});
-    this.setState(() => this.state.reviews.push(this.state.review));
-    this.setState(() => this.state.reviews.push(this.state.rating));
+    //this.setState(() => this.state.reviews.push(this.state.review));
+    //this.setState(() => this.state.reviews.push(this.state.rating));
     console.log(this.state);
     console.log(this.state.reviews);
     //alert();
-    
   }
 
   postRating() {
@@ -59,9 +58,9 @@ export default class Review extends React.Component {
 
   saveRating(index) {
     this.setState({ rating: index });
-    this.setState(() => this.state.savedRatings.push(this.state.rating));
-    this.setState({ postedRating: this.state.savedRatings[0] });
-    console.log(this.state.rating);
+    //this.setState(() => this.state.savedRatings.push(this.state.rating));
+    //this.setState({ postedRating: this.state.savedRatings[0] });
+    //console.log(this.state.rating);
   }
 
   render() {
@@ -93,12 +92,7 @@ export default class Review extends React.Component {
             <br />
             Write your review
             <br />
-            <textarea
-              className=""
-              type="text"
-              onChange={this.handleChange}
-              
-            />
+            <textarea className="" type="text" onChange={this.handleChange} />
             <div></div>
           </label>
         </form>

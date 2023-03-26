@@ -2,7 +2,7 @@ import React from "react";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Review from "./Review1";
+
 
 export default class Reviews extends React.Component {
   constructor(props) {
@@ -13,8 +13,8 @@ export default class Reviews extends React.Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-  onSubmit() {
-    this.setState(() =>
+  onSubmit() { 
+    this.setState( () =>
       this.state.allReviews.push({
         rating: this.props.list.rating,
         review: this.props.list.review,
@@ -26,7 +26,7 @@ export default class Reviews extends React.Component {
     console.warn(this.props);
     console.warn(this.state.review);
     return (
-      <div key={this.state.objectID}>
+      <div className="container-fluid" key={this.state.objectID}>
         <button
           className="btn btn-primary form-control"
           onClick={this.onSubmit}
@@ -40,7 +40,6 @@ export default class Reviews extends React.Component {
               return (
                 <div key={index}>
                   <p>
-                    
                     {[...Array(5)].map((star, index1) => {
                       index1 += 1;
                       return (
@@ -54,7 +53,7 @@ export default class Reviews extends React.Component {
                       );
                     })}
                   </p>
-                  <p>{movie.review}</p>
+                  <p className="paragraph">{movie.review}</p>
                 </div>
               );
             })}
