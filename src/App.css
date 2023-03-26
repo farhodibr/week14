@@ -1,0 +1,35 @@
+
+.container {
+  background-color: skyblue;
+}
+.horizontal-align {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+}
+.horizontal-align > div:first-child {
+  background-color: rgb(175, 198, 206);
+}
+.horizontal-align > div:last-child {
+  background-color: lightgreen;
+}
+.big-box {
+  height: 20em;
+}
+.small-box {
+  height: 20em;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.on {
+  color: #efa70c;
+}
+.off {
+  color: #ccc;
+}
