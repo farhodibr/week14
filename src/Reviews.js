@@ -17,9 +17,11 @@ export default class Reviews extends React.Component {
     this.setState( () =>
       this.state.allReviews.push({
         rating: this.props.list.rating,
-        review: this.props.list.review,
+        review: this.props.list.review
       })
     );
+  //this.setState( () => this.state.allReviews.pop());
+   console.log(this.state.allReviews)
   }
 
   render() {
@@ -40,13 +42,13 @@ export default class Reviews extends React.Component {
               return (
                 <div key={index}>
                   <p>
-                    {[...Array(5)].map((star, index1) => {
-                      index1 += 1;
+                    {[...Array(5)].map((star, indexStar) => {
+                      indexStar += 1;
                       return (
                         <button
                           type="button"
-                          key={index1}
-                          className={index1 <= movie.rating ? "on" : "off"}
+                          key={indexStar}
+                          className={indexStar <= movie.rating ? "on" : "off"}
                         >
                           <span className="star">&#9733;</span>
                         </button>

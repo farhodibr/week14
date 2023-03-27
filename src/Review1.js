@@ -5,11 +5,11 @@ import Reviews from "./Reviews";
 
 export default class Review extends React.Component {
   constructor(props) {
-    super(props);
+    super(props); 
 
     this.state = {
       review: "",
-
+      
       rating: 0,
     };
 
@@ -29,22 +29,7 @@ export default class Review extends React.Component {
     console.log(this.state.reviews);
   }
 
-  postRating() {
-    [...Array(5)].map((star, index) => {
-      index += 1;
-      return (
-        <button
-          type="button"
-          key={index}
-          className={
-            index <= (this.state.hover || this.state.rating) ? "on" : "off"
-          }
-        >
-          <span className="star">&#9733;</span>
-        </button>
-      );
-    });
-  }
+ 
 
   saveRating(index) {
     this.setState({ rating: index });

@@ -2,27 +2,31 @@ import React, { Component } from "react";
 import "./App.css";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Reviews from "./Reviews";
+import Movies from "./Movies";
 import Review from "./Review1";
 import Clock from "./Clock";
+import Reviews from "./Reviews";
+
 
 
 export default class App extends Component {
   render() {
     return (
-      <div className="container-fluid" >
+      <div className="container-fluid   justify-content-between" >
+        <div className="container-fluid   justify-content-between" ></div>
         <Clock/>
         <div class="container-fluid">
           <div class="row">
+            
             <div class="col-sm">
               <img
                 className="container-fluid"
                 src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/scan034_9a3642e0-7cc1-49b5-a774-f6dc0bdde546_480x.progressive.jpg?v=1678290211"
                 alt="guardians"
               ></img>
-
               <Review />
             </div>
+          
             <div class="col-sm">
               <img
                 className="container-fluid"
@@ -39,9 +43,9 @@ export default class App extends Component {
               ></img>
               <Review />
             </div>
-            <div class="col-sm">
+            <div class="col-sm portfolio-info">
             <img
-                className="container-fluid"
+                className="container-fluid "
                 src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/avatar.adv_480x.progressive.jpg?v=1670962973"
                 alt="NoCountry"
               ></img>
@@ -57,7 +61,10 @@ export default class App extends Component {
             </div>
           </div>
         </div>
+
+        
       </div>
+      
     );
   }
 }

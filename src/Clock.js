@@ -33,3 +33,6 @@ export default class Clock extends React.Component {
     );
   }
 }
+
+
+const array = [1, 2, 3, 4]
