@@ -2,7 +2,7 @@ import React from "react";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Review from "./Review1";
+
 import Reviews from "./Reviews";
 
 export default class Movies extends React.Component {
@@ -24,8 +24,6 @@ export default class Movies extends React.Component {
   }
 
   render() {
-    return(
-      <Reviews movies={this.state} />
-    );
+    return <Reviews movies={this.state} />;
   }
 }

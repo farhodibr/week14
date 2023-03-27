@@ -3,7 +3,7 @@ import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Review from "./Review1";
-import Reviews from "./Reviews";
+
 
 export default class Stars extends React.Component {
   constructor(props) {

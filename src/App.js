@@ -4,12 +4,14 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Reviews from "./Reviews";
 import Review from "./Review1";
+import Clock from "./Clock";
 
 
 export default class App extends Component {
   render() {
     return (
       <div className="container-fluid" >
+        <Clock/>
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm">
