@@ -5,11 +5,11 @@ import Reviews from "./Reviews";
 
 export default class Review extends React.Component {
   constructor(props) {
-    super(props); 
+    super(props);
 
     this.state = {
       review: "",
-      
+
       rating: 0,
     };
 
@@ -26,10 +26,7 @@ export default class Review extends React.Component {
 
   handleSubmit(event) {
     console.log(this.state);
-    console.log(this.state.reviews);
   }
-
- 
 
   saveRating(index) {
     this.setState({ rating: index });
