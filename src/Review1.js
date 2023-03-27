@@ -9,12 +9,8 @@ export default class Review extends React.Component {
 
     this.state = {
       review: "",
-      //reviews: [],
-      //savedReviews: [],
-      //savedRatings: [],
-      rating: 0,
 
-      //postedRating: 0,
+      rating: 0,
     };
 
     console.log(this.state);
@@ -26,17 +22,11 @@ export default class Review extends React.Component {
 
   handleChange(event) {
     this.setState({ review: event.target.value });
-    //this.setState(() => this.state.reviews.push(this.state  review));
-    //this.setState(() => this.state.savedReviews.push(this.state.reviews[this.state.reviews.length - 1]))
   }
 
   handleSubmit(event) {
-    //this.setState(  review: event.target  review});
-    //this.setState(() => this.state.reviews.push(this.state.review));
-    //this.setState(() => this.state.reviews.push(this.state.rating));
     console.log(this.state);
     console.log(this.state.reviews);
-    //alert();
   }
 
   postRating() {
@@ -58,9 +48,6 @@ export default class Review extends React.Component {
 
   saveRating(index) {
     this.setState({ rating: index });
-    //this.setState(() => this.state.savedRatings.push(this.state.rating));
-    //this.setState({ postedRating: this.state.savedRatings[0] });
-    //console.log(this.state.rating);
   }
 
   render() {
