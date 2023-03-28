@@ -3,7 +3,6 @@ import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 export default class Reviews extends React.Component {
   constructor(props) {
     super(props);
@@ -12,21 +11,20 @@ export default class Reviews extends React.Component {
     };
     this.onSubmit = this.onSubmit.bind(this);
   }
-
-  onSubmit() { 
-    this.setState( () =>
+ // This function creates {} in allReviews
+  onSubmit() {
+    this.setState(() =>
       this.state.allReviews.push({
         rating: this.props.list.rating,
-        review: this.props.list.review
+        review: this.props.list.review,
       })
     );
-  //this.setState( () => this.state.allReviews.pop());
-   console.log(this.state.allReviews)
   }
 
   render() {
-    console.warn(this.props);
-    console.warn(this.state.review);
+    console.warn(this.state.allReviews);
+    // console.warn(this.props);
+    // console.warn(this.state.review);
     return (
       <div className="container-fluid" key={this.state.objectID}>
         <button
